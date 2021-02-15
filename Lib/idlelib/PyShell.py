@@ -1542,6 +1542,20 @@ def main():
 
     # start editor and/or shell windows:
     root = Tk(className="Idle")
+    
+    # esh: set font size: config(size=11, family="Sans")
+    # esh: size set for 27" WQHD
+    import tkinter.font as tkFont
+    tkFont.nametofont("TkCaptionFont").config(size=11)
+    tkFont.nametofont("TkSmallCaptionFont").config(size=10)
+    tkFont.nametofont("TkTooltipFont").config(size=10)
+    tkFont.nametofont("TkFixedFont").config(size=11)
+    tkFont.nametofont("TkHeadingFont").config(size=11)
+    tkFont.nametofont("TkMenuFont").config(size=11)
+    tkFont.nametofont("TkIconFont").config(size=11)
+    tkFont.nametofont("TkTextFont").config(size=11)
+    tkFont.nametofont("TkDefaultFont").config(size=11)
+    
     root.withdraw()
 
     # set application icon

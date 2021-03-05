@@ -1553,7 +1553,7 @@ def main():
     root = Tk(className="Idle")
     
     # esh: set font size: config(size=11, family="Sans")
-    # esh: size set for 27" WQHD
+    # esh: size set for 27" WQHD, 24" FullHD
     import tkFont
     tkFont.nametofont("TkCaptionFont").config(size=11)
     tkFont.nametofont("TkSmallCaptionFont").config(size=10)
